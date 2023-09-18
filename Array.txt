@@ -1,0 +1,22 @@
+Sub Sintaxis Matriz ()
+
+     Dim MatrizF() As Long
+     Dim MatrizC() As Long
+     Dim i As Long
+     Dim f As Long, c As Long
+
+     For i = 1 To 10
+         ReDim Preserve MatrizF(1 To i)
+         ReDim Preserve MatrizC(1 To i)
+         MatrizF (i) - i
+         Matrizc (i)
+     Next i
+
+--Multiplicar numeros.
+     For f = LBound(MatrizF) To UBound(MatrizF)
+         For c = LBound(MatrizC) To UBound(MatrizC)
+             Hojal.Cells(f, c).value = MatrizF(f) * MatrizC(c)
+         Next c
+     Next f
+
+End Sub
